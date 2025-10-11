@@ -27,10 +27,12 @@ header {
     align-items: center;
     padding: 15px 50px;
     background: rgba(15, 15, 15, 0.4); /* translucent background */
-    backdrop-filter: blur(12px); /* the “glass” effect */
-    -webkit-backdrop-filter: blur(12px); /* for Safari */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* subtle border */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* soft shadow below */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    z-index: 10;
 }
 
 .logo-container {
@@ -51,11 +53,13 @@ header {
     color: cyan;
 }
 
+/* Default nav links (desktop) */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 25px;
     margin: 0;
+    transition: all 0.3s ease;
 }
 
 .nav-links a {
@@ -68,6 +72,56 @@ header {
 .nav-links a:hover {
     color: cyan;
 }
+
+/* ===== HAMBURGER ICON ===== */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: cyan;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle.active {
+    transform: rotate(90deg);
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: rgba(20, 20, 20, 0.95);
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
 
 
 /* ===== SECTIONS ===== */
