@@ -444,23 +444,23 @@ section {
 
 /* CONTACT SECTION */
 .contact-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #1a1a1a; 
-  text-align: center;
-  padding: 60px 20px;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 .contact-container {
-  background: rgba(20, 20, 20, 0.6);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 20px;
-  padding: 40px;
-  max-width: 700px;
-  width: 90%;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 90%;
 }
 
 .contact-container:hover{
@@ -468,22 +468,22 @@ section {
 }
 
 .contact-container h2 {
-  color: #ffb533;
-  font-size: 2rem;
-  margin-bottom: 10px;
+    color: #ffb533;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .contact-container p {
-  font-size: 1rem;
-  margin-bottom: 30px;
-  color: #aaa;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #aaa;
 }
 
 .socials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 .social-card {
@@ -504,21 +504,21 @@ section {
 }
 
 .social-card img {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1);
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
 }
 
 .social-card span a {
-  font-size: 0.85rem;
-  color: #e0e0e0;
-  user-select: text;
-  text-decoration: none;
-  overflow-wrap: break-word;
-  word-wrap: break-all;
-  display: inline-block;
-  max-width: 100%;
-  hyphens: auto;
+    font-size: 0.85rem;
+    color: #e0e0e0;
+    user-select: text;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-wrap: break-all;
+    display: inline-block;
+    max-width: 100%;
+    hyphens: auto;
 }
 
 
@@ -527,6 +527,10 @@ footer {
     height: 100px;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     color: #aaa;
+    background: #1a1a1a; 
     font-size: 0.9rem;
 }
