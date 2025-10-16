@@ -6,6 +6,9 @@
     <title>John Henry Abangon | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 </head>
 <body>
 
@@ -25,6 +28,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -33,7 +37,7 @@
 
     <!-- - HOME - -->
     <section class="home-section" id="home">
-      <div class="volleyball-net"></div>  <!-- animated vball net background -->
+      <div class="volleyball-net"></div>
         
       <div class="home-content">
         <h1>Hi, I'm <span>John Henry Abangon</span></h1>
@@ -44,7 +48,8 @@
 
     <!-- - ABOUT - -->
     <section id="about" class="about-section">
-        <h2>About Me</h2>
+        <img src="assets/me.JPEG" alt="Cute Picture ni Henry" class="about-img">
+        <h2>About Me</h2><br>
         <p>
             A 3rd-year Computer Science student at the Technological University of the Philippines, he is currently exploring the fundamentals of HTML, CSS, and JavaScript to strengthen his foundation as a future web developer. 
             Beyond coding, he is passionate about sports, particularly volleyball, where teamwork, discipline, and focus have shaped his mindset and approach to both learning and development.
@@ -64,15 +69,61 @@
             <div class="skill"><span>PHP</span></div>
             <div class="skill"><span>MySQL</span></div>
         </div>
-        <p class="note">Currently improving my front-end and web development skills.</p>
     </section>
+
+    <!-- - CERIFICATIONS - -->
+    <section id="certifications" class="certifications-section">
+        <h2>Certifications & Courses</h2>
+        <div class="cert-container">
+             <div class="cert-card online">
+                <h3>Introduction to Cybersecurity</h3>
+                <p>Cybersecurity Course</p>
+                <p class="issuer">Cisco Networking Academy</p>
+                <span class="date">Sept 2025</span>
+                <a href="https://www.credly.com/badges/de734da1-dc23-48c1-96d0-ff0f5cabcb4a/public_url" class="btn-cert" target="_blank">View Credential</a>
+            </div>
+            
+            <div class="cert-card school">
+                <h3>UI/UX Hawk-A-Thon: Designing the Future</h3>
+                <p>UI/UX Designer</p>
+                <p class="issuer">Technological University of the Philippines</p>
+                <span class="date">March 2025</span>
+                <a href="https://drive.google.com/file/d/1hPUsieBmYuWnC5g7bQeaIMvnK4M4r-AS/view?usp=sharing" class="btn-cert" target="_blank">View Credential</a>
+            </div>
+
+            <div class="cert-card online">
+                <h3>Principles of Web Development and Introduction to HTML</h3>
+                <p>HTML Fundamentals Course</p>
+                <p class="issuer">Department of Information and Communications Technology (DICT)</p>
+                <span class="date">July 2024</span>
+                <a href="https://drive.google.com/file/d/1EHKBohM3S_4oyl8NTMgrAMfsPyzvluQm/view?usp=sharing" class="btn-cert" target="_blank">View Credential</a>
+            </div>
+
+            <div class="cert-card school">
+                <h3>Light Up Your Network: Bridging Connections through Technology</h3>
+                <p>Networking Event</p>
+                <p class="issuer">GDG - Technological University of the Philippines</p>
+                <span class="date">Feb 2024</span>
+                <a href="https://drive.google.com/file/d/1KosttIXdcFtDqY0bO_MZIE8sP7n0SLhx/view?usp=sharing" class="btn-cert" target="_blank">View Credential</a>
+            </div>
+
+            <div class="cert-card online">
+                <h3>Study Jam: Basics of Database Administration</h3>
+                <p>Online Seminar</p>
+                <p class="issuer">GDG - Technological University of the Philippines</p>
+                <span class="date">Nov 2025</span>
+                <a href="https://drive.google.com/file/d/1l7MUsq0xfQ02d9KIc74buplX6tdj1ZLC/view?usp=sharing" class="btn-cert" target="_blank">View Credential</a>
+            </div>
+        </div>
+    </section>
+
 
     <!--  PROJECTS  -->
     <section id="projects" class="projects-section">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-card">
-                <img src="assets/project.jpg" alt="Kutiscan Project" class="project-img"> 
+                <img src="assets/kutiscan.png" alt="Kutiscan Project" class="project-img"> 
                 <h3>Kutiscan</h3>
                 <p>A skincare analysis and recommendation mobile app built for personalized skin care routines.</p>
                 <div class="tech-stack">
@@ -84,7 +135,7 @@
             </div>
 
             <div class="project-card">
-                <img src="assets/project.jpg" alt="MiddMe Project" class="project-img"> 
+                <img src="assets/middme.png" alt="MiddMe Project" class="project-img"> 
                 <h3>MiddMe</h3>
                 <p>A web platform that helps users find the midpoint between two or more locations for meetups.</p>
                 <div class="tech-stack">
@@ -97,10 +148,10 @@
             </div>
 
             <div class="project-card">
-                <img src="assets/project.jpg" alt="PaSked Project" class="project-img"> 
+                <img src="assets/pasked.png" alt="PaSked Project" class="project-img"> 
                 <h3>PaSked</h3>
                 <p>
-                    An online court reservation and scheduling system that helps users book sports courts easily and avoid overlapping schedules.
+                    An online court reservation and scheduling system in Metro Manila.
                 </p>
                 <div class="tech-stack">
                     <span>HTML/CSS</span>
@@ -146,5 +197,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
